@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="form">
+    <span></span>
+    <br />
+    <h2> Are you sure you want to delete {{(item.name).replace('_', ' ')}}? </h2>
+    <br />
+    <form action="" method="POST">
+        <span>
+            <button type="submit" class="deletebutton" type="submit">Delete</button>
+            <a href="{{url_for('read_latest_items')}}">Cancel</a>
+        </span>
+    </form>
+</div>
+{% endblock %}
+

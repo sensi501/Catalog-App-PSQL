@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="information">
+    <div class="messageflash">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li><strong>{{message}}</strong></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+    <br />
+    <div class="categories">
+        <span></span>
+        <br />
+        <table class="categoriestable">
+            <th>
+                <h2>Categories</h2>
+            </th>
+            {% for category in categories %}
+            <tr>
+                <td><a href="{{url_for('read_category_items', category_name=category.name)}}">{{category.name}}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="items">
+        <span>
+            <a href="{{url_for('create_item')}}">Add Item</a>
+        </span>
+        <br />
+        <table class="itemstable">
+            <th>
+                <h2>{{category.name}} Items ({{length}} items)</h2>
+            </th>
+            {% for item in items %}
+            {% for category in categories %}
+            {% if category.id == item.id %}
+                <tr>
+                    <td><a href="{{url_for('read_item_information', category_name=category.name, item_name=item.name)}}">{{(item.name).replace('_', ' ')}}</a></td>
+                </tr>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}" />
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+    </head>
+	<body>
+        <div class="nav">
+            <div class="navtitle">
+                <h1 class="title">
+                    <a href="{{url_for('read_latest_items')}}">Catalog App</a>
+                </h1>
+            </div>
+            <div class="navloginlogout">
+                <h1 class="loginlogout">
+                    {%if 'username' not in session %}
+                    <a href="{{url_for('login')}}">Login </a>
+                    {% else %}
+                    <a href="{{url_for('disconnect')}}">Logout </a>
+                    {% endif %}
+                </h1>
+            </div>
+        </div>
+        <br />
+		<div class="main">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>

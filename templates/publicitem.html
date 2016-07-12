@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="information">
+    <span></span>
+    <br />
+    <h2 class="name">{{(item.name).replace('_', ' ')}}</h2>
+    <br />
+    <div>Description: {{item.description}}</div>
+</div>
+{% endblock %}

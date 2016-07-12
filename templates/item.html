@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="information">
+    <span></span>
+    <br />
+    <h2 class="name">{{(item.name).replace('_', ' ')}}</h2>
+    <br />
+    <div>Description: {{item.description}}</div>
+    <br />
+    <span>
+        <a href="{{url_for('update_item', item_name=item.name)}}">Edit</a>
+        <a href="{{url_for('delete_item', item_name=item.name)}}">Delete</a>
+    </span>
+</div>
+{% endblock %}
