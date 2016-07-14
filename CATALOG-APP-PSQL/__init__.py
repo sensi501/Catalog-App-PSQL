@@ -22,7 +22,7 @@ CLIENT_ID = json.loads(
 APPLICATION_NAME = "Catalog"
 
 # Database Access Code
-engine = create_engine('postgresql://catalog.db')
+engine = create_engine('postgresql:///catalog.db')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
@@ -284,4 +284,10 @@ def disconnect():
         return redirect(url_for('read_latest_items'))
 
 if __name__ == '__main__':
+<<<<<<< HEAD:CATALOG-APP-PSQL/__init__.py
     app.run()
+=======
+    app.secret_key = 'super_secret_key'
+    app.debug = True
+    app.run(host='0.0.0.0', port=8000)
+>>>>>>> origin/master:application.py
