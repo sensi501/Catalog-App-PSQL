@@ -284,10 +284,4 @@ def disconnect():
         return redirect(url_for('read_latest_items'))
 
 if __name__ == '__main__':
-<<<<<<< HEAD:CATALOG-APP-PSQL/__init__.py
     app.run()
-=======
-    app.secret_key = 'super_secret_key'
-    app.debug = True
-    app.run(host='0.0.0.0', port=8000)
->>>>>>> origin/master:application.py
