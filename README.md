@@ -7,11 +7,11 @@ Server SSH Port:
 
 
 Server IP Address: 
-    50.112.202.120
+    52.42.5.101
 
 
 Server URL:
-    http://ec2-50-112-202-120.us-west-2.compute.amazonaws.com/ 
+    http://ec2-52-42-5-101.us-west-2.compute.amazonaws.com/ 
 
 
 Server Configuration Changes:
@@ -28,6 +28,11 @@ Server Configuration Changes:
     -   Installed python-dev
     -   Set-up python virtual environment
     -   Installed flask via python pip
+    -   Installed sqlalchemy via python pip
+    -   Installed oauth2client via python pip
+    -   Installed python-psycopg2
+    -   Installed libpq-dev
+    -   Installed psycopg2 via python pip 
     -   Setup catalog application to run on virtual environment
 
 
@@ -41,6 +46,11 @@ Additional Software Installed:
     -   git
     -   python-dev
     -   flask (via - python pip install)
+    -   sqlalchemy (via python pip install)
+    -   oauth2client (via python pip install)
+    -   python-psycopg2
+    -   libpq-dev
+    -   psycopg2 (via python pip install)
 
 
 Third Party Help/Tutorial/Information Resources:
@@ -70,6 +80,9 @@ Third Party Help/Tutorial/Information Resources:
 
     -   Hosting Flask Application on Ubuntu
         -   https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+
+    -   Setup psycopg2
+        -   http://stackoverflow.com/questions/28253681/you-need-to-install-postgresql-server-dev-x-y-for-building-a-server-side-extensi
 
 
 Contact:

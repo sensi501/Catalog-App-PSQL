@@ -22,7 +22,7 @@ CLIENT_ID = json.loads(
 APPLICATION_NAME = "Catalog"
 
 # Database Access Code
-engine = create_engine('postgresql:///catalog.db')
+engine = create_engine('psycopg2://catalog:Catalog1@localhost/catalog')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
