@@ -18,11 +18,11 @@ app = Flask(__name__)
 
 # Google Sever Authentication Access Information
 CLIENT_ID = json.loads(
-    open('client_secrets.json', 'r').read())['web']['client_id']
+    open('/var/www/Catalog-App-PSQL/client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Catalog"
 
 # Database Access Code
-engine = create_engine('psycopg2://catalog:Catalog1@localhost/catalog')
+engine = create_engine('postgresql://catalog:Catalog1@localhost:5432/catalog')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
@@ -284,4 +284,5 @@ def disconnect():
         return redirect(url_for('read_latest_items'))
 
 if __name__ == '__main__':
+    app.secret_key = 'super_secret_key'
     app.run()
