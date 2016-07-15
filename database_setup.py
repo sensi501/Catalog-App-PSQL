@@ -4,7 +4,7 @@ from database_schema import Base, Category
 
 
 # Database Session Variable Initialization
-engine = create_engine('psycopg2://catalog:Catalog1@/localhost/catalog')
+engine = create_engine('postgresql://catalog:Catalog1@localhost:5432/catalog')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()

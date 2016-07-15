@@ -88,5 +88,13 @@ Third Party Help/Tutorial/Information Resources:
         -   http://stackoverflow.com/questions/28253681/you-need-to-install-postgresql-server-dev-x-y-for-building-a-server-side-extensi
 
 
+Notes
+    -   Google account login authentication will only with updated Google App Engine Credentials
+
+
 Contact:
+<<<<<<< HEAD
     sensi501@gmail.com
+=======
+    sensi501@yahoo.com
+>>>>>>> origin/master
