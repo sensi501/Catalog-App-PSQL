@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 # Google Sever Authentication Access Information
 CLIENT_ID = json.loads(
-    open('/var/www/Catalog-App-PSQL/client_secrets.json', 'r').read())['web']['client_id']
+    open('client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Catalog"
 
 # Database Access Code

@@ -7,11 +7,11 @@ Server SSH Port:
 
 
 Server IP Address: 
-    52.42.42.203
+    52.42.5.101
 
 
 Server URL:
-    http://ec2-52-42-42-203.us-west-2.compute.amazonaws.com/ 
+    http://ec2-52-42-5-101.us-west-2.compute.amazonaws.com/ 
 
 
 Server Configuration Changes:
@@ -63,9 +63,6 @@ Third Party Help/Tutorial/Information Resources:
     -   Change Ubuntu Time Zone Data
         -   https://www.digitalocean.com/community/tutorials/how-to-set-up-timezone-and-ntp-synchronization-on-ubuntu-14-04-quickstart
 
-    -   Change ssh daemon port configurations
-        -   https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vps
-
     -   Set-up Ubuntu UFW Firewall Ports And Rules
         -   https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server
 
@@ -93,8 +90,4 @@ Notes
 
 
 Contact:
-<<<<<<< HEAD
     sensi501@gmail.com
-=======
-    sensi501@yahoo.com
->>>>>>> origin/master
