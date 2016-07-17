@@ -6,4 +6,4 @@ sys.path.insert(0,"/var/www/Catalog-App-PSQL/")
 
 
 from __init__ import app as application
-application.secret_key = 'super_secret_key'
+#application.secret_key = 'super_secret_key'

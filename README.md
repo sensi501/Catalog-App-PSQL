@@ -7,11 +7,11 @@ Server SSH Port:
 
 
 Server IP Address: 
-    52.42.5.101
+    52.42.42.203
 
 
 Server URL:
-    http://ec2-52-42-5-101.us-west-2.compute.amazonaws.com/ 
+    http://ec2-52-42-42-203.us-west-2.compute.amazonaws.com/ 
 
 
 Server Configuration Changes:
@@ -83,11 +83,7 @@ Third Party Help/Tutorial/Information Resources:
 
     -   Setup psycopg2
         -   http://stackoverflow.com/questions/28253681/you-need-to-install-postgresql-server-dev-x-y-for-building-a-server-side-extensi
-
-
-Notes
-    -   Google account login authentication will only with updated Google App Engine Credentials
-
+	
 
 Contact:
     sensi501@gmail.com
